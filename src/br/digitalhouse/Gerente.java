@@ -5,8 +5,9 @@ public class Gerente extends Pessoa {
     private float salario;
 
 
-    Gerente(String novoNome, int novoNascimento,float salario  ,String area) {
+    Gerente(String novoNome, Data novoNascimento, float salario2  ,String area) {
         super(novoNome, novoNascimento);
+        salario = salario2;
     }
 
     public void calculoIposto(float salario){

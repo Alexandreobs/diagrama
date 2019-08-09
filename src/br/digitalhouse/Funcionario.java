@@ -11,8 +11,9 @@ public class Funcionario extends Pessoa {
         this.salario = salario;
     }
 
-    protected Funcionario(String novoNome, int novoNascimento, float salario) {
+    protected Funcionario(String novoNome, Data novoNascimento, float salario2) {
         super(novoNome, novoNascimento);
+        salario = salario2;
     }
 
     public void calculoIposto(float salario){

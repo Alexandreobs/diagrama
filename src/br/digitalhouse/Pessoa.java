@@ -1,20 +1,20 @@
 package br.digitalhouse;
 
 public abstract class Pessoa {
-    private String nome;
-    private int nascimento;
 
-    public Pessoa(String novoNome, int novoNascimento){
+    private String nome;
+    private Data nascimento;
+
+    public Pessoa(String novoNome, Data novoNascimento){
         nome = novoNome;
         nascimento = novoNascimento;
-
     }
 
        public String getNome() {
         return nome;
     }
 
-    public int getNascimento() {
+    public Data getNascimento() {
         return nascimento;
     }
 
@@ -22,7 +22,7 @@ public abstract class Pessoa {
         this.nome = nome;
     }
 
-    public void setNascimento(int nascimento) {
+    public void setNascimento(Data nascimento) {
         this.nascimento = nascimento;
     }
 

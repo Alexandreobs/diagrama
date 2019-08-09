@@ -4,7 +4,7 @@ public class Cliente extends Pessoa {
     public int codCliente;
 
 
-    public Cliente(String novoNome, int novoNascimento, int codCliente) {
+    public Cliente(String novoNome, Data novoNascimento, int codCliente) {
         super(novoNome, novoNascimento);
     }
 
@@ -13,9 +13,7 @@ public class Cliente extends Pessoa {
         return codCliente;
     }
 
-
     public void setCodCliente(int codCliente) {
         this.codCliente = codCliente;
     }
-
 }

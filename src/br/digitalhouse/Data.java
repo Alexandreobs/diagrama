@@ -1,7 +1,5 @@
 package br.digitalhouse;
 
-import javax.swing.*;
-
 public class Data {
         private int dia;
         private int mes;
@@ -33,7 +31,7 @@ public class Data {
         this.mes = mes;
     }
 
-    public void setAno(int ano) {
+    public void setAno(int ano)  {
         this.ano = ano;
     }
 }
