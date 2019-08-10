@@ -5,6 +5,8 @@ public abstract class Pessoa {
     private String nome;
     private Data nascimento;
 
+    public abstract void imprimirDados();
+
     public Pessoa(String novoNome, Data novoNascimento){
         nome = novoNome;
         nascimento = novoNascimento;
@@ -26,4 +28,11 @@ public abstract class Pessoa {
         this.nascimento = nascimento;
     }
 
+    @Override
+    public String toString() {
+        return "Pessoa{" +
+                "nome='" + nome + '\'' +
+                ", nascimento=" + nascimento +
+                '}';
+    }
 }

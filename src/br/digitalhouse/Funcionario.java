@@ -16,8 +16,15 @@ public class Funcionario extends Pessoa {
         salario = salario2;
     }
 
-    public void calculoIposto(float salario){
-        System.out.println("O imposto sobre seu salario é R$" + salario * 3/100);
+    public float calculoImposto(float salario){
+        return (salario * 3/100);
     }
 
+    @Override
+    public void imprimirDados() {
+        System.out.println( "Nome do Funcionario: " + super.getNome() + "\n"
+            + "Data de Nascimento " + super.getNascimento().getDia() + "/" + getNascimento().getMes() + "/" + getNascimento().getAno() +"\n"
+            + "Valor do salario é de: R$" + getSalario() + " O valor pago de Imposto è R$:" + calculoImposto(getSalario()) + "\n");
+
+    }
 }
